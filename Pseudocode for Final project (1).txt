@@ -1,0 +1,73 @@
+import libraries: pygame, time, sys, random, pickle
+Tell pygame to start running codes.
+Draw window with dimensions of 800 by 600
+Draw background to fill the window
+
+Display message 'Pong' in around middle of screen
+Display highscore throughout all sessions of game right below 'Pong'
+
+Draw rectangles with messages: PLAY, RULES, and QUIT button
+
+If user presses QUIT, exit out of program
+
+If user presses RULES, draw background on screen
+Display the rules on screen
+Display back button on top right
+If back button pressed, return to game menu
+
+If user presses PLAY, fill game display with black.
+
+On the screen display message Score
+Make score display top left of screen
+Make score go up by 1 each time ball(defined below) hits paddle(defined below)
+When score hits 10, make the score increase by 2
+When score hits 20, make the score increase by 5
+When score hits 30, make the score increase by 10
+When score hits 255, make the score increase by 100
+When score hits 655, let user win the game, and let user continue.
+If score is greater than highscore throughout all sessions, rewrite new highscore to equal current score
+
+
+On the screen display message Lives
+Make lives display at bottom left of screen
+Make lives start at 3
+Each time user fails to hit ball, lives go down by 1
+Make the user lose when lives is equal to 0 and reset to main menu
+Make a sound effect when lives hit 0
+
+On the screen draw a rectangle(paddle) width 160p height 1.5p at right side of screen
+When user presses up arrow, make paddle move up by 2.2p
+When user presses down arrow, make paddle move down by 2.2p
+When user tries to move off screen, make paddle stop but it can still move in opposite direction of wall
+Make the paddle become more invisible with each time the user gets more points
+When score is 255, paddle is invisible but only has a '</3' displayed on it with greater dimensions than the </3.
+
+On the screen draw a circle(ball) with radius 12p at center of screen
+Make ball start moving down and to the right both at either 2p or 3p randomized
+If the ball hits edge of screen except for the edge where paddle located,
+Make ball starts moving in the other direction(if moving up and to the right when hitting wall, it will move down and to the left.)
+If ball hits wall where paddle located, make lives go down by 1, make ball reset to middle and make it start moving again, make the paddle also resets to middle
+If ball hits the paddle, make the ball go in the opposite direction for east and west so if it hits the paddle while moving up and to the right, it would still move up but to the left
+Make the ball have a random speed(either - 2p or -3p) when it hits paddle
+
+On the screen display fps at which game is running
+Make fps display at top right 
+Acquire fps from game
+Let game max fps be 360
+
+On the screen draw a border
+Make border blue
+Border is displayed while the background is black
+
+If player presses P while playing the game,
+Fill screen with black
+Make 3 rectangle buttons displayed with messages, Resume, Rules, and Menu
+If menu is left clcked make user return to main menu and current game will be lost
+If rules is left clicked display rules on screen
+Also display back button on screen when rules pressed
+If back button pressed, let user return to pause with the 3 buttons 
+If resume is left clicked let user go back to the game they were in
+
+
+
+ 
